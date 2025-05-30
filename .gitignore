@@ -1,0 +1,43 @@
+# Archivos y carpetas de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.ipynb_checkpoints
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+
+# Archivos de configuración locales
+*.env
+.env.*
+
+# Archivos de logs
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Jupyter Notebook exportados
+*.nbconvert.ipynb
+
+# Archivos de bases de datos
+*.sqlite3
+
+# Archivos CSV grandes (si no quieres trackearlos en Git)
+# heart.csv
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yml
+
+# VSCode settings (si usas VSCode)
+.vscode/
+
+# Archivos generados por el sistema
+*.swp
