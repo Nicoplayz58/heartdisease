@@ -395,7 +395,7 @@ app.layout = html.Div(style=estilo_general, children=[
             style=estilo_tab
         ),
 
-        dcc.Tab(label='Marco Teórico',
+       dcc.Tab(label='Marco Teórico',
     children=[
         html.Div([
             html.H2("📚 Marco Teórico", style={
@@ -411,25 +411,22 @@ app.layout = html.Div(style=estilo_general, children=[
             html.Div([
                 html.H3("🔬 Enfermedades Cardíacas", style={'color': '#bbdefb'}),
                 html.P("""
-                    Las enfermedades cardíacas comprenden un conjunto de afecciones que afectan al corazón y vasos sanguíneos. 
-                    Entre las más comunes se encuentran la enfermedad coronaria, insuficiencia cardíaca, arritmias y enfermedad valvular.
-                    Factores como el colesterol alto, la hipertensión, el tabaquismo, la diabetes y la inactividad física incrementan el riesgo.
-                """, style={
-                    'backgroundColor': '#1e1e1e',
-                    'padding': '20px',
-                    'borderRadius': '10px',
-                    'color': '#f5f5f5',
-                    'fontSize': '18px',
-                    'lineHeight': '1.8',
-                    'textAlign': 'justify',
-                    'boxShadow': '0 0 10px rgba(144,202,249,0.3)'
-                }),
+                    Las enfermedades cardíacas representan una de las principales causas de muerte a nivel mundial. Según la 
+                    Organización Mundial de la Salud (OMS), se estima que cada año mueren más de 17 millones de personas por 
+                    enfermedades cardiovasculares. Entre estas, las más frecuentes incluyen enfermedad coronaria, insuficiencia 
+                    cardíaca, arritmias y enfermedades valvulares.
 
-                html.H3("📊 Machine Learning en Medicina", style={'color': '#bbdefb', 'marginTop': '30px'}),
-                html.P("""
-                    El uso de algoritmos de aprendizaje automático permite detectar patrones complejos en grandes volúmenes de datos. 
-                    En este caso, se utiliza un modelo de clasificación (Random Forest) para predecir la presencia de enfermedad cardíaca 
-                    a partir de variables clínicas como la edad, presión arterial, frecuencia cardíaca, entre otros.
+                    Diversos estudios han demostrado la fuerte asociación entre factores de riesgo modificables y la aparición 
+                    de enfermedades del corazón. Por ejemplo, el estudio INTERHEART (Yusuf et al., 2004), que analizó a más de 
+                    30,000 personas en 52 países, identificó que el 90% del riesgo de infarto agudo de miocardio está relacionado 
+                    con nueve factores como tabaquismo, hipertensión, diabetes, obesidad abdominal e inactividad física.
+
+                    En el contexto latinoamericano, la Encuesta Nacional de Salud de Colombia (ENSIN, 2015) evidenció que 
+                    aproximadamente el 30% de los adultos presentan hipertensión, y más del 50% tienen sobrepeso u obesidad, 
+                    condiciones que aumentan significativamente el riesgo de eventos cardiovasculares.
+
+                    Estos hallazgos refuerzan la importancia del diagnóstico temprano y la estratificación de riesgo para 
+                    implementar estrategias preventivas eficaces y reducir la carga de enfermedad en la población.
                 """, style={
                     'backgroundColor': '#1e1e1e',
                     'padding': '20px',
@@ -443,9 +440,19 @@ app.layout = html.Div(style=estilo_general, children=[
 
                 html.H3("🌲 Random Forest", style={'color': '#bbdefb', 'marginTop': '30px'}),
                 html.P("""
-                    Random Forest es un modelo de tipo ensamble que crea múltiples árboles de decisión y combina sus predicciones 
-                    para mejorar precisión y evitar el sobreajuste. Es robusto, funciona bien con datos mixtos y permite interpretar 
-                    la importancia de las variables, siendo ideal para contextos médicos donde la transparencia es clave.
+                    Random Forest es un algoritmo de aprendizaje supervisado basado en ensambles de árboles de decisión. Su 
+                    funcionamiento se basa en la construcción de múltiples árboles entrenados con subconjuntos aleatorios de 
+                    datos y características, combinando sus resultados mediante votación para clasificación o promedio para 
+                    regresión.
+
+                    Este modelo ha demostrado ser especialmente útil en medicina, donde la interpretabilidad y la robustez son 
+                    esenciales. De acuerdo con un estudio publicado en *Computers in Biology and Medicine* (Zhang et al., 2020), 
+                    el uso de Random Forest para predecir eventos cardiovasculares en pacientes hospitalizados alcanzó una 
+                    precisión superior al 85%, superando a métodos clásicos como regresión logística.
+
+                    Además, su capacidad para manejar datos no lineales y variables altamente correlacionadas lo convierte en 
+                    una herramienta valiosa para aplicaciones clínicas, especialmente en modelos de predicción de riesgo, 
+                    clasificación de patologías y priorización de pacientes.
                 """, style={
                     'backgroundColor': '#1e1e1e',
                     'padding': '20px',
